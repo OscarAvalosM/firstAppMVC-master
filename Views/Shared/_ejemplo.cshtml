@@ -23,10 +23,16 @@
 </head>
 
 <body id="page-top">
-     
-      <!-- Page Wrapper -->
-    <div id="wrapper">
 
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SigInManager
+
+
+
+ <!-- Page Wrapper -->
+    <div id="wrapper">
+@if(SigInManager.IsSignedIn(User))
+{
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
@@ -44,8 +50,8 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" asp-controller="Home" asp-action="Index">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span></a>
             </li>
 
             <!-- Divider -->
@@ -61,24 +67,19 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                    <i class="fas fa-arrow-alt-circle-right"></i>
-                    <span>Color</span>
+                    <span>Mascota</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Datos:</h6>
-                        <a class="collapse-item" href="#">Edad</a>
-                        <a class="collapse-item" href="#">Tipo</a>
+                        <h6 class="collapse-header">mascota:</h6>
+                        <a class="collapse-item" asp-controller="Mascota" asp-action="Create">Agregar Mascota</a>
+                        <a class="collapse-item" asp-controller="Mascota" asp-action="Index">Lista de Mascota</a>
+                        
                     </div>
                 </div>
             </li>
-
             
-            <!-- Nav Item - TIPOS -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-dog"></i>
-                    <span>TIPOS</span></a>
-            </li>
+           
 
             <!-- Nav Item - Personal -->
             <li class="nav-item">
@@ -101,7 +102,7 @@
 
         </ul>
         <!-- End of Sidebar -->
-
+}
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -111,6 +112,7 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+@if(SigInManager.IsSignedIn(User)){
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
@@ -162,27 +164,22 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Oscar Avalos</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                    @User.Identity.Name
+                                </span>
+
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                aria-labelledby="userDropdown"> 
+                                <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/PersonalData">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Configuraciones
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                   Registro de actividad
+                                    Perfil del usuario
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                    Cerrar sesión
                                 </a>
@@ -190,7 +187,7 @@
                         </li>
 
                     </ul>
-
+}
                 </nav>
                 <!-- End of Topbar -->
 

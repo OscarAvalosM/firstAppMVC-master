@@ -15619,8 +15619,38 @@
   "RootNamespace": "firstApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Mascota\\Create.cshtml",
+      "TargetPath": "Views\\Mascota\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Mascota\\Delete.cshtml",
+      "TargetPath": "Views\\Mascota\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15639,8 +15669,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Shared\\_ejemplo.cshtml",
       "TargetPath": "Views\\Shared\\_ejemplo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Mascota\\Index.cshtml",
+      "TargetPath": "Views\\Mascota\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,8 +15694,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Mascota\\Details.cshtml",
+      "TargetPath": "Views\\Mascota\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Mascota\\Edit.cshtml",
+      "TargetPath": "Views\\Mascota\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15661,6 +15741,11 @@
     {
       "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\11471\\OneDrive\\Escritorio\\firstAppMVC-master\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],
